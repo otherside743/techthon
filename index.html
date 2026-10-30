@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -9,337 +9,108 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-
   <canvas id="bgCanvas" aria-hidden="true"></canvas>
 
-  <!-- HEADER -->
   <header class="site-header" id="siteHeader">
-    <nav class="nav-inner">
-      <div class="nav-brand">
-        <div class="logo-wrap">
-          <img
-            src="https://content.jdmagicbox.com/v2/comp/kanpur/g8/0512px512.x512.250127142310.w5g8/catalogue/guru-har-rai-school-koyla-nagar-branch-koyla-nagar-kanpur-schools-44tthjppgj-250.jpg"
-            alt="Guru Har Rai Academy Logo"
-            class="school-logo"
-            width="44"
-            height="44"
-          />
-        </div>
-        <div class="brand-text">
-          <span class="brand-school">Guru Har Rai Academy</span>
-          <span class="brand-event">Techthon 3.0</span>
-        </div>
-      </div>
-
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a class="nav-brand" href="#hero" aria-label="Guru Har Rai Academy — Techthon 3.0 home">
+        <span class="logo-wrap"><img src="./guru-har-rai-school-koyla-nagar-branch-koyla-nagar-kanpur-schools-44tthjppgj-250.webp" alt="" class="school-logo" width="44" height="44" /></span>
+        <span class="brand-text"><span class="brand-school">Guru Har Rai Academy</span><span class="brand-event">Techthon 3.0</span></span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
-
       <ul class="nav-links" id="navLinks">
-        <li><a href="#hero"     class="nav-link">Home</a></li>
-        <li><a href="#about"    class="nav-link">About</a></li>
-        <li><a href="#apps"     class="nav-link">Tech Lab</a></li>
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#apps" class="nav-link">Tech Lab</a></li>
         <li><a href="#register" class="nav-link">Register</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-
-    <!-- HERO -->
     <section id="hero" class="hero">
       <div class="hero-content">
-        <div class="hero-badge">
-          <span class="badge-dot"></span>
-          Live Event · 2026
-        </div>
-        <h1 class="hero-title">
-          <span class="title-top">Techthon</span>
-          <span class="title-num">3.0</span>
-        </h1>
-        <p class="hero-sub">
-          Welcome to Techthon 3.0! 🚀 Get ready to show off your tech skills,
-          play around with cool code, and see what you can build. Whether you're
-          a beginner or a computer whiz, come join the fun and represent
-          <strong>Guru Har Rai Academy!</strong>
-        </p>
-        <div class="hero-btns">
-          <a href="#register" class="btn btn-primary">Register Now →</a>
-          <a href="#apps"     class="btn btn-ghost">Try Tech Lab</a>
-        </div>
+        <div class="hero-badge"><span class="badge-dot"></span>Live Event · 2026</div>
+        <h1 class="hero-title"><span class="title-top">Techthon</span><span class="title-num">3.0</span></h1>
+        <p class="hero-sub">Welcome to Techthon 3.0! 🚀 Get ready to show off your tech skills, play around with cool code, and see what you can build. Whether you're a beginner or a computer whiz, come join the fun and represent <strong>Guru Har Rai Academy!</strong></p>
+        <div class="hero-btns"><a href="#register" class="btn btn-primary">Register Now →</a><a href="#apps" class="btn btn-ghost">Try Tech Lab</a></div>
         <div class="hero-stats">
-          <div class="stat glass">
-             <span class="stat-n">3-4</span>
-            <span class="stat-l">Events</span>
-          </div>
-          <div class="stat glass">
-            <span class="stat-n">3rd</span>
-            <span class="stat-l">Edition</span>
-          </div>
-          <div class="stat glass">
-            <span class="stat-n">∞</span>
-            <span class="stat-l">Fun</span>
-          </div>
+          <div class="stat glass"><span class="stat-n">3-4</span><span class="stat-l">Events</span></div>
+          <div class="stat glass"><span class="stat-n">3rd</span><span class="stat-l">Edition</span></div>
+          <div class="stat glass"><span class="stat-n">∞</span><span class="stat-l">Fun</span></div>
         </div>
       </div>
-      <div class="hero-deco" aria-hidden="true">
-        <div class="deco glass">💡 Innovate</div>
-        <div class="deco glass">⚡ Build Fast</div>
-        <div class="deco glass">🏆 Win Big</div>
-      </div>
+      <div class="hero-deco" aria-hidden="true"><div class="deco glass">💡 Innovate</div><div class="deco glass">⚡ Build Fast</div><div class="deco glass">🏆 Win Big</div></div>
     </section>
 
-    <!-- ABOUT -->
     <section id="about" class="section">
       <div class="container">
-        <div class="sec-head">
-          <span class="sec-tag">About the Event</span>
-          <h2 class="sec-title">What is Techthon 3.0?</h2>
-          <p class="sec-desc">A flagship tech competition where young minds compete, collaborate, and create.</p>
-        </div>
+        <div class="sec-head"><span class="sec-tag">About the Event</span><h2 class="sec-title">What is Techthon 3.0?</h2><p class="sec-desc">A flagship tech competition where young minds compete, collaborate, and create.</p></div>
         <div class="bento">
-          <div class="bcard bcard-lg glass">
-            <span class="bico">🎯</span>
-            <h3>Our Mission</h3>
-            <p>Techthon 3.0 is designed to spark curiosity in every student — from Class 5 to Class 12. We believe every kid has a builder inside. Come prove it.</p>
-            <span class="btag">Est. 2023</span>
-          </div>
-           <div class="bcard glass">
-            <span class="bico">⚔️</span>
-            <h3>Tournament Rules</h3>
-            <p><strong>Round 1:</strong> Qualifiers. Showcase your web and tech skills. Only the elite survive.</p>
-            <p style="margin-top:0.5rem"><strong>Round 2 (Finals):</strong></p>
-            <ul class="blist">
-              <li>Class 1-5: Console Games</li>
-              <li>Class 6-8: Console Games</li>
-              <li>Class IX-XI: ATL Project (Tech/AI)</li>
-            </ul>
-          </div>
-          <div class="bcard glass">
-            <span class="bico">🏫</span>
-            <h3>Venue</h3>
-            <p>Guru Har Rai Academy<br>Computer Science Block</p>
-            <span class="bbadge">Kanpur, UP</span>
-          </div>
-          <div class="bcard glass bcard-accent">
-            <span class="bico">🌟</span>
-            <h3>Who Can Join?</h3>
-            <ul class="blist">
-               <li>All GHA students</li>
-              <li>All skill levels welcome</li>
-              <li>Solo or team of 2</li>
-              <li>No prior coding needed</li>
-            </ul>
-          </div>
-          <div class="bcard glass">
-            <span class="bico">🛠️</span>
-            <h3>Categories</h3>
-            <div class="tags">
-              <span class="tag">Web Design</span>
-              <span class="tag">Coding</span>
-              <span class="tag">Quiz</span>
-              <span class="tag">Debugging</span>
-              <span class="tag">AI Basics</span>
-              <span class="tag">Typing Speed</span>
-            </div>
-          </div>
-          <div class="bcard glass">
-            <span class="bico">🎁</span>
-            <h3>Prizes</h3>
-            <p>Certificates, trophies, and exclusive school recognition for top performers.</p>
-            <div class="medals">🥇 🥈 🥉</div>
-          </div>
+          <div class="bcard bcard-lg glass"><span class="bico">🎯</span><h3>Our Mission</h3><p>Techthon 3.0 is designed to spark curiosity in every student — from Class 5 to Class 12. We believe every kid has a builder inside. Come prove it.</p><span class="btag">Est. 2023</span></div>
+          <div class="bcard glass"><span class="bico">⚔️</span><h3>Tournament Rules</h3><p><strong>Round 1:</strong> Qualifiers. Showcase your web and tech skills. Only the elite survive.</p><p class="round-label"><strong>Round 2 (Finals):</strong></p><ul class="blist"><li>Class 1-5: Console Games</li><li>Class 6-8: Console Games</li><li>Class IX-XI: ATL Project (Tech/AI)</li></ul></div>
+          <div class="bcard glass"><span class="bico">🏫</span><h3>Venue</h3><p>Guru Har Rai Academy<br />Computer Science Block</p><span class="bbadge">Kanpur, UP</span></div>
+          <div class="bcard glass bcard-accent"><span class="bico">🌟</span><h3>Who Can Join?</h3><ul class="blist"><li>All GHA students</li><li>All skill levels welcome</li><li>Solo or team of 2</li><li>No prior coding needed</li></ul></div>
+          <div class="bcard glass"><span class="bico">🛠️</span><h3>Categories</h3><div class="tags"><span class="tag">Web Design</span><span class="tag">Coding</span><span class="tag">Quiz</span><span class="tag">Debugging</span><span class="tag">AI Basics</span><span class="tag">Typing Speed</span></div></div>
+          <div class="bcard glass"><span class="bico">🎁</span><h3>Prizes</h3><p>Certificates, trophies, and exclusive school recognition for top performers.</p><div class="medals">🥇 🥈 🥉</div></div>
         </div>
       </div>
     </section>
 
-    <!-- TECH LAB -->
     <section id="apps" class="section section-tinted">
       <div class="container">
-        <div class="sec-head">
-          <span class="sec-tag">Interactive</span>
-          <h2 class="sec-title">Tech Lab 🧪</h2>
-          <p class="sec-desc">Warm up for Techthon with these live tools. No install needed.</p>
-        </div>
+        <div class="sec-head"><span class="sec-tag">Interactive</span><h2 class="sec-title">Tech Lab 🧪</h2><p class="sec-desc">Warm up for Techthon with these live tools. No install needed.</p></div>
         <div class="apps-grid">
-
-          <!-- Terminal -->
           <div class="app-card glass">
-            <div class="app-bar">
-              <div class="dots"><span class="d r"></span><span class="d y"></span><span class="d g"></span></div>
-              <span class="app-name">JS Terminal</span>
-              <button class="clear-btn" id="termClear">Clear</button>
-            </div>
-            <div class="term-out" id="termOut" role="log" aria-live="polite"></div>
-            <div class="term-row">
-              <span class="term-ps" aria-hidden="true">❯</span>
-              <input
-                type="text"
-                id="termIn"
-                class="term-in"
-                placeholder="Type a command and press Enter…"
-                autocomplete="off"
-                spellcheck="false"
-              />
-            </div>
-            <div class="app-hint">
-              Try: <code>help</code> · <code>date</code> · <code>calc 5+3</code> ·
-              <code>echo Hi</code> · <code>joke</code> · <code>flip</code> · <code>clear</code>
-            </div>
+            <div class="app-bar"><div class="dots"><span class="d r"></span><span class="d y"></span><span class="d g"></span></div><span class="app-name">JS Terminal</span><button class="clear-btn" id="termClear" type="button">Clear</button></div>
+            <div class="term-out" id="termOut" role="log" aria-live="polite" aria-label="Terminal output"></div>
+            <div class="term-row"><span class="term-ps" aria-hidden="true">❯</span><input type="text" id="termIn" class="term-in" placeholder="Type a command and press Enter…" autocomplete="off" spellcheck="false" aria-label="Terminal command" /></div>
+            <div class="app-hint">Try: <code>help</code> · <code>date</code> · <code>calc 5+3</code> · <code>echo Hi</code> · <code>joke</code> · <code>flip</code> · <code>clear</code></div>
           </div>
-
-          <!-- Base64 -->
           <div class="app-card glass">
-            <div class="app-bar">
-              <div class="dots"><span class="d r"></span><span class="d y"></span><span class="d g"></span></div>
-              <span class="app-name">Base64 Encoder / Decoder</span>
-            </div>
+            <div class="app-bar"><div class="dots"><span class="d r"></span><span class="d y"></span><span class="d g"></span></div><span class="app-name">Base64 Encoder / Decoder</span></div>
             <div class="b64-wrap">
-              <div class="field-grp">
-                <label for="b64In" class="field-lbl">Input</label>
-                <textarea id="b64In"  class="b64-ta"              placeholder="Type anything here…"   rows="4"></textarea>
-              </div>
-              <div class="b64-btns">
-                <button class="btn btn-primary btn-sm" id="b64Enc">Encode →</button>
-                <button class="btn btn-ghost   btn-sm" id="b64Dec">← Decode</button>
-                <button class="btn btn-neutral btn-sm" id="b64Cpy">Copy</button>
-                <button class="btn btn-neutral btn-sm" id="b64Swp">Swap ⇅</button>
-              </div>
-              <div class="field-grp">
-                <label for="b64Out" class="field-lbl">Output</label>
-                <textarea id="b64Out" class="b64-ta b64-out" placeholder="Result appears here…" rows="4" readonly></textarea>
-              </div>
+              <div class="field-grp"><label for="b64In" class="field-lbl">Input</label><textarea id="b64In" class="b64-ta" placeholder="Type anything here…" rows="4"></textarea></div>
+              <div class="b64-btns"><button class="btn btn-primary btn-sm" id="b64Enc" type="button">Encode →</button><button class="btn btn-ghost btn-sm" id="b64Dec" type="button">← Decode</button><button class="btn btn-neutral btn-sm" id="b64Cpy" type="button">Copy</button><button class="btn btn-neutral btn-sm" id="b64Swp" type="button">Swap ⇅</button></div>
+              <div class="field-grp"><label for="b64Out" class="field-lbl">Output</label><textarea id="b64Out" class="b64-ta b64-out" placeholder="Result appears here…" rows="4" readonly></textarea></div>
               <div class="b64-status" id="b64St" role="status" aria-live="polite"></div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
 
-    <!-- REGISTRATION -->
     <section id="register" class="section">
       <div class="container">
-        <div class="sec-head">
-          <span class="sec-tag">Join the Event</span>
-          <h2 class="sec-title">Register for Techthon 3.0</h2>
-          <p class="sec-desc">Free registration. Takes less than a minute.</p>
-        </div>
+        <div class="sec-head"><span class="sec-tag">Join the Event</span><h2 class="sec-title">Register for Techthon 3.0</h2><p class="sec-desc">Free registration. Takes less than a minute.</p></div>
         <div class="reg-layout">
-
-          <div class="reg-info glass">
-            <h3>Why Register?</h3>
-            <ul class="benefits">
-              <li><span>✅</span><span>Official participation certificate</span></li>
-              <li><span>🏅</span><span>Chance to win school trophies</span></li>
-              <li><span>🤝</span><span>Network with fellow tech enthusiasts</span></li>
-              <li><span>🚀</span><span>Kickstart your tech journey</span></li>
-            </ul>
-            <div class="reg-note">ℹ️ Registration closes soon. Grab your spot!</div>
-          </div>
-
+          <div class="reg-info glass"><h3>Why Register?</h3><ul class="benefits"><li><span>✅</span><span>Official participation certificate</span></li><li><span>🏅</span><span>Chance to win school trophies</span></li><li><span>🤝</span><span>Network with fellow tech enthusiasts</span></li><li><span>🚀</span><span>Kickstart your tech journey</span></li></ul><div class="reg-note">ℹ️ Registration closes soon. Grab your spot!</div></div>
           <div class="reg-form-wrap glass">
             <form id="regForm" novalidate>
               <div class="form-grid">
-
-                <div class="fg fg-full">
-                  <label for="fName" class="fl">Full Name <span class="req">*</span></label>
-                  <input type="text"   id="fName"    name="name"    class="fi" placeholder="e.g. Arjun Sharma"  maxlength="80"  autocomplete="name" />
-                  <span class="ferr" id="eN" role="alert"></span>
-                </div>
-
-                <div class="fg">
-                  <label for="fClass" class="fl">Class <span class="req">*</span></label>
-                  <select id="fClass" name="class" class="fi fsel">
-                    <option value="" disabled selected>Select Class</option>
-                    <option value="5">Class 5</option>
-                    <option value="6">Class 6</option>
-                    <option value="7">Class 7</option>
-                    <option value="8">Class 8</option>
-                    <option value="9">Class 9</option>
-                    <option value="10">Class 10</option>
-                    <option value="11">Class 11</option>
-                    <option value="12">Class 12</option>
-                  </select>
-                  <span class="ferr" id="eC" role="alert"></span>
-                </div>
-
-                <div class="fg">
-                  <label for="fSec" class="fl">Section <span class="req">*</span></label>
-                  <input type="text"   id="fSec"     name="section" class="fi" placeholder="e.g. A"             maxlength="3" />
-                  <span class="ferr" id="eS" role="alert"></span>
-                </div>
-
-                <div class="fg">
-                  <label for="fRoll" class="fl">Roll Number <span class="req">*</span></label>
-                  <input type="text"   id="fRoll"    name="roll_no" class="fi" placeholder="e.g. 23"            maxlength="6" />
-                  <span class="ferr" id="eR" role="alert"></span>
-                </div>
-
-                <div class="fg">
-                  <label for="fSr" class="fl">SR Number <span class="req">*</span></label>
-                  <input type="text"   id="fSr"      name="sr_no"   class="fi" placeholder="e.g. 2024-1234"     maxlength="20" />
-                  <span class="ferr" id="eSR" role="alert"></span>
-                </div>
-
+                <div class="fg fg-full"><label for="fName" class="fl">Full Name <span class="req">*</span></label><input type="text" id="fName" name="name" class="fi" placeholder="e.g. Arjun Sharma" maxlength="80" autocomplete="name" aria-describedby="eN" /><span class="ferr" id="eN" role="alert"></span></div>
+                <div class="fg"><label for="fClass" class="fl">Class <span class="req">*</span></label><select id="fClass" name="class" class="fi fsel" aria-describedby="eC"><option value="" disabled selected>Select Class</option><option value="5">Class 5</option><option value="6">Class 6</option><option value="7">Class 7</option><option value="8">Class 8</option><option value="9">Class 9</option><option value="10">Class 10</option><option value="11">Class 11</option><option value="12">Class 12</option></select><span class="ferr" id="eC" role="alert"></span></div>
+                <div class="fg"><label for="fSec" class="fl">Section <span class="req">*</span></label><input type="text" id="fSec" name="section" class="fi" placeholder="e.g. A" maxlength="3" aria-describedby="eS" /><span class="ferr" id="eS" role="alert"></span></div>
+                <div class="fg"><label for="fRoll" class="fl">Roll Number <span class="req">*</span></label><input type="text" id="fRoll" name="roll_no" class="fi" placeholder="e.g. 23" maxlength="6" aria-describedby="eR" /><span class="ferr" id="eR" role="alert"></span></div>
+                <div class="fg"><label for="fSr" class="fl">SR Number <span class="req">*</span></label><input type="text" id="fSr" name="sr_no" class="fi" placeholder="e.g. 2024-1234" maxlength="20" aria-describedby="eSR" /><span class="ferr" id="eSR" role="alert"></span></div>
               </div>
-
-              <div class="form-foot">
-                <button type="submit" class="btn btn-primary btn-lg" id="subBtn">
-                  <span id="subTxt">Submit Registration</span>
-                  <span id="subLoad" class="hidden">
-                    <span class="spinner"></span> Submitting…
-                  </span>
-                </button>
-                <p class="priv">Your data is used only for event registration.</p>
-              </div>
-
+              <div class="form-foot"><button type="submit" class="btn btn-primary btn-lg" id="subBtn"><span id="subTxt">Submit Registration</span><span id="subLoad" class="hidden"><span class="spinner"></span> Submitting…</span></button><p class="priv">Your data is used only for event registration.</p></div>
             </form>
           </div>
-
         </div>
       </div>
     </section>
-
   </main>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-in">
-      <div class="footer-brand">
-        <img
-          src="https://content.jdmagicbox.com/v2/comp/kanpur/g8/0512px512.x512.250127142310.w5g8/catalogue/guru-har-rai-school-koyla-nagar-branch-koyla-nagar-kanpur-schools-44tthjppgj-250.jpg"
-          alt="GHRA Logo" width="34" height="34" class="footer-logo"
-        />
-        <div>
-          <span class="f-school">Guru Har Rai Academy</span>
-          <span class="f-tag">Empowering Young Innovators</span>
-        </div>
-      </div>
-      <p class="f-copy">&copy; 2026 Techthon 3.0 | GHA</p>
-    </div>
-  </footer>
+  <footer class="footer"><div class="footer-in"><div class="footer-brand"><img src="./guru-har-rai-school-koyla-nagar-branch-koyla-nagar-kanpur-schools-44tthjppgj-250.webp" alt="" width="34" height="34" class="footer-logo" /><div><span class="f-school">Guru Har Rai Academy</span><span class="f-tag">Empowering Young Innovators</span></div></div><p class="f-copy">&copy; 2026 Techthon 3.0 | GHA</p></div></footer>
 
-  <!-- SUCCESS MODAL -->
-  <div class="modal-bg" id="modalBg" aria-hidden="true">
-    <div class="modal-box glass" role="dialog" aria-modal="true" aria-labelledby="mTitle">
-      <div class="m-icon">🎉</div>
-      <h2 class="m-title" id="mTitle">You're Registered!</h2>
-      <p class="m-desc">
-        Welcome to <strong>Techthon 3.0</strong>! Your registration was submitted successfully.
-        Get ready to show the world what you've got. 🚀
-      </p>
-      <div class="m-meta" id="mMeta"></div>
-      <button class="btn btn-primary" id="mClose">Awesome, Let's Go!</button>
-    </div>
-  </div>
-
-  <!-- TOAST -->
+  <div class="modal-bg" id="modalBg" aria-hidden="true"><div class="modal-box glass" role="dialog" aria-modal="true" aria-labelledby="mTitle" aria-describedby="mDesc"><div class="m-icon">🎉</div><h2 class="m-title" id="mTitle">You're Registered!</h2><p class="m-desc" id="mDesc">Welcome to <strong>Techthon 3.0</strong>! Your registration was submitted successfully. Get ready to show the world what you've got. 🚀</p><div class="m-meta" id="mMeta"></div><button class="btn btn-primary" id="mClose" type="button">Awesome, Let's Go!</button></div></div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-
-  <script src="script.js"></script>
+  <script type="module" src="/src/main.ts"></script>
 </body>
 </html>
